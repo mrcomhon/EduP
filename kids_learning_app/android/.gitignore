@@ -1,0 +1,142 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks
+
+# Flutter/Dart stuff
+.dart_tool/
+.packages
+.pub-cache/
+build/
+*.lock
+
+# VS Code
+.vscode/
+.idea/
+
+# Android
+/android/.gradle
+/android/local.properties
+/android/key.properties
+/android/*.jks
+/android/gradlew
+/android/gradlew.bat
+/android/gradle-wrapper.jar
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# macOS
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+
+# Web
+web/.dart_tool/
+
+# Assets
+*.mp4
+*.mov
+*.zip
+*.rar
+*.7z
+
+# Others
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+workspace.xml
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+pubspec.lock
+
+# Android
+android/.gradle/
+android/captures/
+android/local.properties
+*.iml
+
+# iOS
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/.symlinks/
+ios/Runner.xcworkspace/
+ios/build/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/build/
+
+# Web
+web/generated_plugin_registrant.dart
+
+# Windows
+windows/flutter/ephemeral/
+windows/build/
+
+# Linux
+linux/flutter/ephemeral/
+linux/build/
+
+# Others
+.idea/
+.vscode/
+*.log
+*.tmp
+*.lock
+*.swp
+
+# Flutter SDK (если случайно положил внутрь)
+flutter/lut
+
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/engine/
+
+# VS Code / IntelliJ
+.vscode/
+.idea/
+*.iml
+
+# Mac
+.DS_Store
