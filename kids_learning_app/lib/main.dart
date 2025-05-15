@@ -14,6 +14,7 @@ import 'responsive_scaffold.dart';
 import 'FindSoundInWordScreen.dart';
 import 'find_sound_position_screen.dart';
 import 'build_word_from_sounds.dart';
+import 'grade_school_screen.dart';
 
 
 final Map<String, WidgetBuilder> appRoutes = {
@@ -31,6 +32,7 @@ final Map<String, WidgetBuilder> appRoutes = {
   '/letters': (context) => PreschoolLettersScreen(),
   '/lessons': (context) => LessonsScreen(),
   '/speech': (context) => SpeechTherapyScreen(),
+  '/grade_school': (context) => GradeSchoolScreen(),
 };
 
 void main() {
@@ -143,7 +145,7 @@ class HomeScreen extends StatelessWidget {
               if (group == 'school') ...[
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/grade3');
+                    Navigator.pushNamed(context, '/grade_school');
                   },
                   child: Text(
                     '📘 Уроки 7–11 лет',
@@ -169,7 +171,6 @@ class LessonsScreen extends StatelessWidget {
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
         shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
         children: [
           _LessonCard(
             icon: Icons.calculate,
