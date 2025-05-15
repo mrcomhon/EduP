@@ -15,44 +15,79 @@ class _MathAssignmentsScreenState extends State<MathAssignmentsScreen> {
 
   final List<BaseAssignment> assignments = [
     MathProblem(
-      question: 'Реши пример: 5 + 7 = ?',
-      hint: 'Попробуй посчитать на пальцах!',
-      correctAnswer: 12,
-    ),
-    MathProblem(
-      question: 'Сколько будет 9 - 4?',
-      hint: 'Отсчитай 4 от 9',
-      correctAnswer: 5,
-    ),
-    MathProblem(
-      question: 'Реши: 3 × 4 = ?',
-      hint: 'Это то же самое, что 3 + 3 + 3 + 3',
-      correctAnswer: 12,
-    ),
-    MathProblem(
-      question: 'Реши: 15 + 28 = ?',
-      hint: 'Сначала сложи десятки, потом единицы',
-      correctAnswer: 43,
-    ),
-    MathProblem(
-      question: 'Реши: 72 - 35 = ?',
-      hint: 'Вычитай по разрядам',
-      correctAnswer: 37,
-    ),
-    MathProblem(
-      question: 'Реши: 6 × 7 = ?',
-      hint: 'Это 6 раз по 7',
-      correctAnswer: 42,
-    ),
-    MathProblem(
-      question: 'Реши: 48 ÷ 6 = ?',
-      hint: 'Сколько раз 6 помещается в 48?',
-      correctAnswer: 8,
-    ),
-    MathProblem(
-      question: 'Реши: 125 + 378 = ?',
+      question: 'Реши пример: 125 + 378 = ?',
       hint: 'Складывай по разрядам',
       correctAnswer: 503,
+    ),
+    MathProblem(
+      question: 'Реши: 96 ÷ 8 = ?',
+      hint: 'Сколько раз 8 помещается в 96?',
+      correctAnswer: 12,
+    ),
+    MathProblem(
+      question: 'Реши: 7 × 8 = ?',
+      hint: 'Это 7 раз по 8',
+      correctAnswer: 56,
+    ),
+    MathProblem(
+      question: 'Реши: 234 - 156 = ?',
+      hint: 'Вычитай по разрядам',
+      correctAnswer: 78,
+    ),
+    MathProblem(
+      question: 'Реши: 45 × 3 = ?',
+      hint: 'Умножь 40 на 3 и 5 на 3, потом сложи',
+      correctAnswer: 135,
+    ),
+    MathProblem(
+      question: 'Реши: 84 ÷ 7 = ?',
+      hint: 'Сколько раз 7 помещается в 84?',
+      correctAnswer: 12,
+    ),
+    MathProblem(
+      question: 'Реши: 256 + 189 = ?',
+      hint: 'Складывай по разрядам',
+      correctAnswer: 445,
+    ),
+    MathProblem(
+      question: 'Реши: 9 × 9 = ?',
+      hint: 'Это 9 раз по 9',
+      correctAnswer: 81,
+    ),
+    MathProblem(
+      question: 'Реши: 432 - 287 = ?',
+      hint: 'Вычитай по разрядам',
+      correctAnswer: 145,
+    ),
+    MathProblem(
+      question: 'Реши: 56 × 4 = ?',
+      hint: 'Умножь 50 на 4 и 6 на 4, потом сложи',
+      correctAnswer: 224,
+    ),
+    MathProblem(
+      question: 'Реши: 144 ÷ 12 = ?',
+      hint: 'Сколько раз 12 помещается в 144?',
+      correctAnswer: 12,
+    ),
+    MathProblem(
+      question: 'Реши: 367 + 458 = ?',
+      hint: 'Складывай по разрядам',
+      correctAnswer: 825,
+    ),
+    MathProblem(
+      question: 'Реши: 8 × 7 = ?',
+      hint: 'Это 8 раз по 7',
+      correctAnswer: 56,
+    ),
+    MathProblem(
+      question: 'Реши: 528 - 349 = ?',
+      hint: 'Вычитай по разрядам',
+      correctAnswer: 179,
+    ),
+    MathProblem(
+      question: 'Реши: 72 ÷ 6 = ?',
+      hint: 'Сколько раз 6 помещается в 72?',
+      correctAnswer: 12,
     ),
   ];
 

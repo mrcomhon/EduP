@@ -40,7 +40,7 @@ abstract class BaseAssignment {
       decoration: getTextFieldDecoration('Введите ответ'),
       onSubmitted: onSubmitted,
       inputFormatters: [
-        FilteringTextInputFormatter.deny(RegExp(r'[^\p{L}\p{N}\s]', unicode: true)),
+        FilteringTextInputFormatter.allow(RegExp(r'[а-яА-Яa-zA-Z0-9\s]')),
       ],
     );
   }

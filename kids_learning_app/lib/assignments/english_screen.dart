@@ -2,92 +2,92 @@ import 'package:flutter/material.dart';
 import '../responsive_scaffold.dart';
 import 'base_assignment.dart';
 
-class RussianLanguageScreen extends StatefulWidget {
+class EnglishScreen extends StatefulWidget {
   @override
-  _RussianLanguageScreenState createState() => _RussianLanguageScreenState();
+  _EnglishScreenState createState() => _EnglishScreenState();
 }
 
-class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
+class _EnglishScreenState extends State<EnglishScreen> {
   int currentAssignmentIndex = 0;
   int score = 0;
   bool showHint = false;
   final TextEditingController _answerController = TextEditingController();
 
   final List<BaseAssignment> assignments = [
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: м_шина',
-      hint: 'Это транспортное средство',
-      correctAnswer: 'а',
+    EnglishAssignment(
+      question: 'Переведи слово "кот" на английский',
+      hint: 'Это слово начинается на "c"',
+      correctAnswer: 'cat',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: красив_ дом',
-      hint: 'Мужской род',
-      correctAnswer: 'ый',
+    EnglishAssignment(
+      question: 'Как будет "яблоко" по-английски?',
+      hint: 'Это слово начинается на "a"',
+      correctAnswer: 'apple',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _рбуз',
-      hint: 'Это большой зеленый фрукт',
-      correctAnswer: 'а',
+    EnglishAssignment(
+      question: 'Переведи фразу "Я люблю читать"',
+      hint: 'I love to...',
+      correctAnswer: 'i love to read',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: син_ небо',
-      hint: 'Средний род',
-      correctAnswer: 'ее',
+    EnglishAssignment(
+      question: 'Как будет "собака" по-английски?',
+      hint: 'Это слово начинается на "d"',
+      correctAnswer: 'dog',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _льбом',
-      hint: 'В нем хранят фотографии',
-      correctAnswer: 'а',
+    EnglishAssignment(
+      question: 'Переведи слово "книга"',
+      hint: 'Это слово начинается на "b"',
+      correctAnswer: 'book',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: весёл_ песня',
-      hint: 'Женский род',
-      correctAnswer: 'ая',
+    EnglishAssignment(
+      question: 'Как будет "школа" по-английски?',
+      hint: 'Это слово начинается на "s"',
+      correctAnswer: 'school',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _ква',
-      hint: 'Этот фрукт растет на дереве',
-      correctAnswer: 'и',
+    EnglishAssignment(
+      question: 'Переведи фразу "Я учусь в школе"',
+      hint: 'I study at...',
+      correctAnswer: 'i study at school',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: хорош_ день',
-      hint: 'Мужской род',
-      correctAnswer: 'ий',
+    EnglishAssignment(
+      question: 'Как будет "ручка" по-английски?',
+      hint: 'Это слово начинается на "p"',
+      correctAnswer: 'pen',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _кно',
-      hint: 'Через него смотрят на улицу',
-      correctAnswer: 'о',
+    EnglishAssignment(
+      question: 'Переведи слово "стол"',
+      hint: 'Это слово начинается на "t"',
+      correctAnswer: 'table',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: красив_ роза',
-      hint: 'Женский род',
-      correctAnswer: 'ая',
+    EnglishAssignment(
+      question: 'Как будет "окно" по-английски?',
+      hint: 'Это слово начинается на "w"',
+      correctAnswer: 'window',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _зык',
-      hint: 'Орган вкуса',
-      correctAnswer: 'я',
+    EnglishAssignment(
+      question: 'Переведи фразу "Я играю в футбол"',
+      hint: 'I play...',
+      correctAnswer: 'i play football',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: бел_ снег',
-      hint: 'Мужской род',
-      correctAnswer: 'ый',
+    EnglishAssignment(
+      question: 'Как будет "мама" по-английски?',
+      hint: 'Это слово начинается на "m"',
+      correctAnswer: 'mother',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _гром',
-      hint: 'Это природное явление',
-      correctAnswer: 'о',
+    EnglishAssignment(
+      question: 'Переведи слово "папа"',
+      hint: 'Это слово начинается на "f"',
+      correctAnswer: 'father',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: син_ море',
-      hint: 'Средний род',
-      correctAnswer: 'ее',
+    EnglishAssignment(
+      question: 'Как будет "сестра" по-английски?',
+      hint: 'Это слово начинается на "s"',
+      correctAnswer: 'sister',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _дведь',
-      hint: 'Это животное впадает в спячку',
-      correctAnswer: 'е',
+    EnglishAssignment(
+      question: 'Переведи фразу "Я люблю свою семью"',
+      hint: 'I love my...',
+      correctAnswer: 'i love my family',
     ),
   ];
 
@@ -132,7 +132,7 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveScaffold(
-      title: 'Русский язык',
+      title: 'Английский язык',
       child: Column(
         children: [
           Padding(
@@ -170,10 +170,10 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   }
 }
 
-class RussianLanguageAssignment extends BaseAssignment {
+class EnglishAssignment extends BaseAssignment {
   final String correctAnswer;
 
-  RussianLanguageAssignment({
+  EnglishAssignment({
     required String question,
     String? hint,
     required this.correctAnswer,

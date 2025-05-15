@@ -2,92 +2,57 @@ import 'package:flutter/material.dart';
 import '../responsive_scaffold.dart';
 import 'base_assignment.dart';
 
-class RussianLanguageScreen extends StatefulWidget {
+class GrammarScreen extends StatefulWidget {
   @override
-  _RussianLanguageScreenState createState() => _RussianLanguageScreenState();
+  _GrammarScreenState createState() => _GrammarScreenState();
 }
 
-class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
+class _GrammarScreenState extends State<GrammarScreen> {
   int currentAssignmentIndex = 0;
   int score = 0;
   bool showHint = false;
   final TextEditingController _answerController = TextEditingController();
 
   final List<BaseAssignment> assignments = [
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: м_шина',
-      hint: 'Это транспортное средство',
-      correctAnswer: 'а',
-    ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: красив_ дом',
       hint: 'Мужской род',
       correctAnswer: 'ый',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _рбуз',
-      hint: 'Это большой зеленый фрукт',
-      correctAnswer: 'а',
+    GrammarAssignment(
+      question: 'Выбери правильное окончание: высок_ гора',
+      hint: 'Женский род',
+      correctAnswer: 'ая',
     ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: син_ небо',
       hint: 'Средний род',
       correctAnswer: 'ее',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _льбом',
-      hint: 'В нем хранят фотографии',
-      correctAnswer: 'а',
-    ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: весёл_ песня',
       hint: 'Женский род',
       correctAnswer: 'ая',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _ква',
-      hint: 'Этот фрукт растет на дереве',
-      correctAnswer: 'и',
-    ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: хорош_ день',
       hint: 'Мужской род',
       correctAnswer: 'ий',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _кно',
-      hint: 'Через него смотрят на улицу',
-      correctAnswer: 'о',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: красив_ роза',
-      hint: 'Женский род',
-      correctAnswer: 'ая',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _зык',
-      hint: 'Орган вкуса',
-      correctAnswer: 'я',
-    ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: бел_ снег',
       hint: 'Мужской род',
       correctAnswer: 'ый',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _гром',
-      hint: 'Это природное явление',
-      correctAnswer: 'о',
+    GrammarAssignment(
+      question: 'Выбери правильное окончание: красив_ роза',
+      hint: 'Женский род',
+      correctAnswer: 'ая',
     ),
-    RussianLanguageAssignment(
+    GrammarAssignment(
       question: 'Выбери правильное окончание: син_ море',
       hint: 'Средний род',
       correctAnswer: 'ее',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _дведь',
-      hint: 'Это животное впадает в спячку',
-      correctAnswer: 'е',
     ),
   ];
 
@@ -132,7 +97,7 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveScaffold(
-      title: 'Русский язык',
+      title: 'Грамматика',
       child: Column(
         children: [
           Padding(
@@ -170,10 +135,10 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   }
 }
 
-class RussianLanguageAssignment extends BaseAssignment {
+class GrammarAssignment extends BaseAssignment {
   final String correctAnswer;
 
-  RussianLanguageAssignment({
+  GrammarAssignment({
     required String question,
     String? hint,
     required this.correctAnswer,

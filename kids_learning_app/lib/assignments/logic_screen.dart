@@ -15,14 +15,64 @@ class _LogicScreenState extends State<LogicScreen> {
 
   final List<BaseAssignment> assignments = [
     LogicAssignment(
-      question: 'Продолжи последовательность: 2, 4, 6, 8, ?',
-      hint: 'Каждое следующее число больше предыдущего на 2',
-      correctAnswer: '10',
+      question: 'Продолжи последовательность: 3, 6, 9, 12, ?',
+      hint: 'Каждое следующее число больше предыдущего на 3',
+      correctAnswer: '15',
     ),
     LogicAssignment(
-      question: 'Найди лишнее слово: яблоко, груша, морковь, слива',
-      hint: 'Одно из этих слов - овощ',
-      correctAnswer: 'морковь',
+      question: 'Найди лишнее слово: кошка, собака, попугай, кролик, тигр',
+      hint: 'Одно из этих животных - дикое',
+      correctAnswer: 'тигр',
+    ),
+    LogicAssignment(
+      question: 'Реши: Если 1=5, 2=10, 3=15, то 4=?',
+      hint: 'Каждое число умножается на 5',
+      correctAnswer: '20',
+    ),
+    LogicAssignment(
+      question: 'Продолжи: январь, февраль, март, ?',
+      hint: 'Месяцы года по порядку',
+      correctAnswer: 'апрель',
+    ),
+    LogicAssignment(
+      question: 'Найди лишнее слово: стол, стул, диван, кровать, шкаф, телевизор',
+      hint: 'Один предмет не является мебелью',
+      correctAnswer: 'телевизор',
+    ),
+    LogicAssignment(
+      question: 'Продолжи последовательность: 5, 10, 15, 20, ?',
+      hint: 'Каждое следующее число больше предыдущего на 5',
+      correctAnswer: '25',
+    ),
+    LogicAssignment(
+      question: 'Реши: Если красный=1, синий=2, зеленый=3, то желтый=?',
+      hint: 'Посчитай порядок цветов радуги',
+      correctAnswer: '4',
+    ),
+    LogicAssignment(
+      question: 'Найди лишнее слово: ручка, карандаш, линейка, тетрадь, учебник, ластик',
+      hint: 'Один предмет не является канцелярским',
+      correctAnswer: 'учебник',
+    ),
+    LogicAssignment(
+      question: 'Продолжи: весна, лето, осень, ?',
+      hint: 'Времена года по порядку',
+      correctAnswer: 'зима',
+    ),
+    LogicAssignment(
+      question: 'Реши: Если 2×2=4, 3×3=9, 4×4=16, то 5×5=?',
+      hint: 'Каждое число умножается само на себя',
+      correctAnswer: '25',
+    ),
+    LogicAssignment(
+      question: 'Продолжи последовательность: 2, 4, 8, 16, ?',
+      hint: 'Каждое следующее число умножается на 2',
+      correctAnswer: '32',
+    ),
+    LogicAssignment(
+      question: 'Найди лишнее слово: Москва, Санкт-Петербург, Новосибирск, Екатеринбург, Сочи, Париж',
+      hint: 'Один город находится в другой стране',
+      correctAnswer: 'париж',
     ),
     LogicAssignment(
       question: 'Реши: Если А=1, Б=2, В=3, то Г=?',
@@ -30,14 +80,14 @@ class _LogicScreenState extends State<LogicScreen> {
       correctAnswer: '4',
     ),
     LogicAssignment(
-      question: 'Сколько треугольников на картинке? (3 линии пересекаются)',
-      hint: 'Посчитай все возможные треугольники',
-      correctAnswer: '7',
-    ),
-    LogicAssignment(
       question: 'Продолжи: понедельник, вторник, среда, ?',
       hint: 'Дни недели по порядку',
       correctAnswer: 'четверг',
+    ),
+    LogicAssignment(
+      question: 'Найди лишнее слово: яблоко, груша, морковь, слива',
+      hint: 'Одно из этих слов - овощ',
+      correctAnswer: 'морковь',
     ),
   ];
 

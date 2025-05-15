@@ -2,92 +2,92 @@ import 'package:flutter/material.dart';
 import '../responsive_scaffold.dart';
 import 'base_assignment.dart';
 
-class RussianLanguageScreen extends StatefulWidget {
+class SpellingScreen extends StatefulWidget {
   @override
-  _RussianLanguageScreenState createState() => _RussianLanguageScreenState();
+  _SpellingScreenState createState() => _SpellingScreenState();
 }
 
-class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
+class _SpellingScreenState extends State<SpellingScreen> {
   int currentAssignmentIndex = 0;
   int score = 0;
   bool showHint = false;
   final TextEditingController _answerController = TextEditingController();
 
   final List<BaseAssignment> assignments = [
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: м_шина',
-      hint: 'Это транспортное средство',
-      correctAnswer: 'а',
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: м_дведь',
+      hint: 'Это животное впадает в спячку',
+      correctAnswer: 'е',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: красив_ дом',
-      hint: 'Мужской род',
-      correctAnswer: 'ый',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _рбуз',
-      hint: 'Это большой зеленый фрукт',
-      correctAnswer: 'а',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: син_ небо',
-      hint: 'Средний род',
-      correctAnswer: 'ее',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _льбом',
-      hint: 'В нем хранят фотографии',
-      correctAnswer: 'а',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: весёл_ песня',
-      hint: 'Женский род',
-      correctAnswer: 'ая',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _ква',
-      hint: 'Этот фрукт растет на дереве',
-      correctAnswer: 'и',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: хорош_ день',
-      hint: 'Мужской род',
-      correctAnswer: 'ий',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _кно',
-      hint: 'Через него смотрят на улицу',
-      correctAnswer: 'о',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: красив_ роза',
-      hint: 'Женский род',
-      correctAnswer: 'ая',
-    ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _зык',
-      hint: 'Орган вкуса',
-      correctAnswer: 'я',
-    ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: бел_ снег',
-      hint: 'Мужской род',
-      correctAnswer: 'ый',
-    ),
-    RussianLanguageAssignment(
+    SpellingAssignment(
       question: 'Вставь пропущенную букву: _гром',
       hint: 'Это природное явление',
       correctAnswer: 'о',
     ),
-    RussianLanguageAssignment(
-      question: 'Выбери правильное окончание: син_ море',
-      hint: 'Средний род',
-      correctAnswer: 'ее',
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _кно',
+      hint: 'Через него смотрят на улицу',
+      correctAnswer: 'о',
     ),
-    RussianLanguageAssignment(
-      question: 'Вставь пропущенную букву: _дведь',
-      hint: 'Это животное впадает в спячку',
-      correctAnswer: 'е',
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _зык',
+      hint: 'Орган вкуса',
+      correctAnswer: 'я',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _рбуз',
+      hint: 'Это большой зеленый фрукт',
+      correctAnswer: 'а',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _льбом',
+      hint: 'В нем хранят фотографии',
+      correctAnswer: 'а',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _ква',
+      hint: 'Этот фрукт растет на дереве',
+      correctAnswer: 'и',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _кно',
+      hint: 'Через него смотрят на улицу',
+      correctAnswer: 'о',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _зык',
+      hint: 'Орган вкуса',
+      correctAnswer: 'я',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _гром',
+      hint: 'Это природное явление',
+      correctAnswer: 'о',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _льбом',
+      hint: 'В нем хранят фотографии',
+      correctAnswer: 'а',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _ква',
+      hint: 'Этот фрукт растет на дереве',
+      correctAnswer: 'и',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _кно',
+      hint: 'Через него смотрят на улицу',
+      correctAnswer: 'о',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _зык',
+      hint: 'Орган вкуса',
+      correctAnswer: 'я',
+    ),
+    SpellingAssignment(
+      question: 'Вставь пропущенную букву: _гром',
+      hint: 'Это природное явление',
+      correctAnswer: 'о',
     ),
   ];
 
@@ -132,7 +132,7 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveScaffold(
-      title: 'Русский язык',
+      title: 'Правописание',
       child: Column(
         children: [
           Padding(
@@ -170,10 +170,10 @@ class _RussianLanguageScreenState extends State<RussianLanguageScreen> {
   }
 }
 
-class RussianLanguageAssignment extends BaseAssignment {
+class SpellingAssignment extends BaseAssignment {
   final String correctAnswer;
 
-  RussianLanguageAssignment({
+  SpellingAssignment({
     required String question,
     String? hint,
     required this.correctAnswer,

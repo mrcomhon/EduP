@@ -14,30 +14,80 @@ class _WorldAroundScreenState extends State<WorldAroundScreen> {
   final TextEditingController _answerController = TextEditingController();
 
   final List<BaseAssignment> assignments = [
-    WorldAssignment(
-      question: 'Какое животное не является млекопитающим: кит, дельфин, акула?',
-      hint: 'Одно из этих животных откладывает яйца',
-      correctAnswer: 'акула',
+    WorldAroundAssignment(
+      question: 'Какое животное впадает в спячку зимой?',
+      hint: 'Это животное живет в лесу и любит мед',
+      correctAnswer: 'медведь',
     ),
-    WorldAssignment(
+    WorldAroundAssignment(
       question: 'Какое время года наступает после лета?',
-      hint: 'Листья желтеют и опадают',
+      hint: 'В это время года листья желтеют и опадают',
       correctAnswer: 'осень',
     ),
-    WorldAssignment(
+    WorldAroundAssignment(
+      question: 'Какая планета самая большая в солнечной системе?',
+      hint: 'Эта планета названа в честь римского бога',
+      correctAnswer: 'юпитер',
+    ),
+    WorldAroundAssignment(
+      question: 'Какой океан самый большой на Земле?',
+      hint: 'Этот океан омывает берега Азии и Америки',
+      correctAnswer: 'тихий',
+    ),
+    WorldAroundAssignment(
+      question: 'Какое животное самое быстрое на суше?',
+      hint: 'Это животное из семейства кошачьих',
+      correctAnswer: 'гепард',
+    ),
+    WorldAroundAssignment(
+      question: 'Какая птица не умеет летать?',
+      hint: 'Эта птица живет в Антарктиде',
+      correctAnswer: 'пингвин',
+    ),
+    WorldAroundAssignment(
+      question: 'Какое животное самое большое на Земле?',
+      hint: 'Это животное живет в океане',
+      correctAnswer: 'синий кит',
+    ),
+    WorldAroundAssignment(
       question: 'Какая планета ближе всего к Солнцу?',
-      hint: 'Самая маленькая планета',
+      hint: 'Эта планета названа в честь римского бога торговли',
       correctAnswer: 'меркурий',
     ),
-    WorldAssignment(
-      question: 'Какое животное не является хищником: лев, волк, кролик?',
-      hint: 'Это животное питается растениями',
-      correctAnswer: 'кролик',
+    WorldAroundAssignment(
+      question: 'Какой материк самый маленький?',
+      hint: 'Этот материк находится в южном полушарии',
+      correctAnswer: 'австралия',
     ),
-    WorldAssignment(
-      question: 'Какой океан самый большой?',
-      hint: 'Начинается на букву "Т"',
-      correctAnswer: 'тихий',
+    WorldAroundAssignment(
+      question: 'Какое животное самое высокое на Земле?',
+      hint: 'У этого животного очень длинная шея',
+      correctAnswer: 'жираф',
+    ),
+    WorldAroundAssignment(
+      question: 'Какая птица самая большая в мире?',
+      hint: 'Эта птица не умеет летать и живет в Африке',
+      correctAnswer: 'страус',
+    ),
+    WorldAroundAssignment(
+      question: 'Какой океан самый маленький?',
+      hint: 'Этот океан находится на севере',
+      correctAnswer: 'северный ледовитый',
+    ),
+    WorldAroundAssignment(
+      question: 'Какое животное самое ядовитое?',
+      hint: 'Это животное живет в Австралии',
+      correctAnswer: 'кубомедуза',
+    ),
+    WorldAroundAssignment(
+      question: 'Какая планета известна своими кольцами?',
+      hint: 'Эта планета названа в честь римского бога земледелия',
+      correctAnswer: 'сатурн',
+    ),
+    WorldAroundAssignment(
+      question: 'Какой материк самый большой?',
+      hint: 'На этом материке находится Россия',
+      correctAnswer: 'евразия',
     ),
   ];
 
@@ -120,10 +170,10 @@ class _WorldAroundScreenState extends State<WorldAroundScreen> {
   }
 }
 
-class WorldAssignment extends BaseAssignment {
+class WorldAroundAssignment extends BaseAssignment {
   final String correctAnswer;
 
-  WorldAssignment({
+  WorldAroundAssignment({
     required String question,
     String? hint,
     required this.correctAnswer,
